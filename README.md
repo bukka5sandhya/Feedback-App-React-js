@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+In this project, let's build a Feedback App by applying the concepts we have learned till now.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Refer to the image below:
 
-## Available Scripts
+![image](https://github.com/bukka5sandhya/Feedback-App-React-js/assets/133884532/05533408-40cf-48b4-a7f9-78c66b42c967)
 
-In the project directory, you can run:
+https://assets.ccbp.in/frontend/content/react-js/feedback-app-output-v2.gif
 
-### `npm start`
+Design Files
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Click to view
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Extra Small (Size < 576px) and Small (Size >= 576px)
 
-### `npm test`
+Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Feedback Question
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Thank You Screen
 
-### `npm run build`
+Set Up Instructions
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Click to view
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Download dependencies by running npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Start up the app using npm start
 
-### `npm run eject`
+Completion Instructions
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Functionality to be added
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The app must have the following functionalities
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+When an emoji is clicked, then the thank you screen should be displayed
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The Feedback component receives the resources as a prop. It consists of the following properties
 
-## Learn More
+Key	Data Type
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+emojis	Array <object>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+loveEmojiUrl	String
 
-### Code Splitting
+emojis consists of list of emoji objects with the following properties in each emoji object
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Key	Data Type
 
-### Analyzing the Bundle Size
+id	Number
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+name	String
 
-### Making a Progressive Web App
+imageUrl	String
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Implementation Files
 
-### Advanced Configuration
+Use these files to complete the implementation:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+src/components/Feedback/index.js
 
-### Deployment
+src/components/Feedback/index.css
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Important Note
 
-### `npm run build` fails to minify
+Click to view
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The following instructions are required for the tests to pass
+
+The love emoji should have the alt as love emoji
+
+The emojis should have the alt equal to name value in each emoji object
+Colors
+
+Hex: #ffeeee
+
+Hex: #ffc0bb
+
+Hex: #ffebeb
+
+Hex: #ffffff
+
+Hex: #0f172a
+
+Hex: #1e293b
+
+Font-families
+
+Roboto
+
+Things to Keep in Mind
+
+All components you implement should go in the src/components directory.
+
+Don't change the component folder names as those are the files being imported into the tests.
+
+Do not remove the pre-filled code
+
+Want to quickly review some of the concepts you’ve been learning? Take a look at the Cheat Sheets
